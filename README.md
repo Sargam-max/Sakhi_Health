@@ -57,7 +57,7 @@ Clone the Repository:
 
 bash
 Copy code
-git clone https://github.com/your-username/SakhiHealth.git
+gh repo clone Sargam-max/Sakhi_Health
 cd SakhiHealth
 Install Dependencies:
 
