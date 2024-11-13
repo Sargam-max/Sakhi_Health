@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Assistant</title>
+    <link rel="stylesheet" href="chatbot.css">
+    <style>
+     
+        .home-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #ff4081; 
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .home-button:hover {
+            background-color: #ff6a88; 
+            transform: scale(1.05);
+        }
+
+        .home-button:active {
+            background-color: #d5006d;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 70px; 
+        }
+    </style>
+</head>
+<body>
+   
+    <a href="ss.html" class="home-button" aria-label="Go back to the home page">
+        Home
+    </a>
+
+
+    <header class="container">
+        <h1>Welcome!</h1>
+        <h2>Talk to Your Personal Assistant</h2>
+    </header>
+
+
+    <main class="chat-container" aria-label="Chat window">
+        
+    </main>
+
+   
+    <footer class="prompt-area" aria-label="Input your message">
+        <input 
+            type="text" 
+            id="prompt" 
+            placeholder="Ask something..." 
+            aria-label="Type your message here"
+        >
+        <button id="btn" aria-label="Send your message">Send</button>
+    </footer>
+
+    
+
+    <script src="chatbot.js"></script>
+</body>
+</html>
